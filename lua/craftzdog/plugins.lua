@@ -80,4 +80,10 @@ packer.startup(function(use)
       "MunifTanjim/nui.nvim",
     }
   })
+  use({
+    'nvim-tree/nvim-tree.lua',
+    requires = {
+      'nvim-tree/nvim-web-devicons', -- optional
+    },
+  })
 end)

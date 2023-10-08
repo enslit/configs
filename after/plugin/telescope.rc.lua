@@ -57,6 +57,13 @@ vim.keymap.set('n', ';f',
       hidden = true
     })
   end)
+vim.keymap.set('n', ';F',
+  function()
+    builtin.find_files({
+      no_ignore = true,
+      hidden = true
+    })
+  end)
 vim.keymap.set('n', ';r', function()
   builtin.live_grep()
 end)
@@ -79,7 +86,7 @@ vim.keymap.set("n", "sf", function()
     respect_gitignore = false,
     hidden = true,
     grouped = true,
-    previewer = true,
+    previewer = false,
     initial_mode = "normal",
     layout_config = { height = 40 }
   })
