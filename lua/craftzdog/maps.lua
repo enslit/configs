@@ -56,7 +56,7 @@ keymap.set("n", "<A-d>", "<cmd>LazyDocker<CR>", { desc = "Toggle LazyDocker", no
 -- Lazygit
 keymap.set("n", "<A-g>", "<cmd>LazyGit<CR>", { desc = "Toggle LazyGit", noremap = true, silent = true })
 
-keymap.set('n', '<C-s>', "<cmd>:w<CR>", { desc = "Save file", noremap = true, silent = true })
+-- keymap.set('n', '<C-s>', "<cmd>:w<CR>", { desc = "Save file", noremap = true, silent = true })
 
 -- Movement selected lines
 keymap.set('v', '<A-j', ':m .+1<CR>==')
