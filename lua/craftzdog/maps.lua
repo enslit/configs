@@ -59,8 +59,12 @@ keymap.set("n", "<A-g>", "<cmd>LazyGit<CR>", { desc = "Toggle LazyGit", noremap 
 -- keymap.set('n', '<C-s>', "<cmd>:w<CR>", { desc = "Save file", noremap = true, silent = true })
 
 -- Movement selected lines
-keymap.set('v', '<A-j', ':m .+1<CR>==')
-keymap.set('v', '<A-k', ':m .-2<CR>==')
+keymap.set('n', '<A-j>', ':m .+1<CR>==')
+keymap.set('n', '<A-k>', ':m .-2<CR>==')
+keymap.set('i', '<A-j>', '<Esc>:m .+1<CR>==gi')
+keymap.set('i', '<A-k>', '<Esc>:m .-2<CR>==gi')
+keymap.set('v', '<A-j>', ":m '>+1<CR>gv=gv")
+keymap.set('v', '<A-k>', ":m '<-2<CR>gv=gv")
 keymap.set('v', "p", "_dP")
 
 keymap.set("x", "<A-j>", ":move '>+1<CR>gv-gv")
