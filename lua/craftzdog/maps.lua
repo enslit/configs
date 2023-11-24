@@ -73,6 +73,10 @@ keymap.set("x", "<A-k>", ":move '<-2<CR>gv-gv")
 keymap.set('n', "<leader>n", "<cmd> set nu! <CR>", { desc = "Toggle line number" })
 keymap.set('n', "<leader>rn", "<cmd> set rnu! <CR>", { desc = "Toggle relative number" })
 
+-- Search and Replace
+keymap.set('n', '<Leader>s', ":%s/\\<<C-r><C-w>\\>/")
+
+-- LSP Formatting
 keymap.set(
   'n',
   "<leader>fm",
