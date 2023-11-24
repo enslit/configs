@@ -86,4 +86,10 @@ packer.startup(function(use)
       'nvim-tree/nvim-web-devicons', -- optional
     },
   })
+  use({
+    'tpope/vim-surround',
+  })
+  use({
+    'svermeulen/vim-easyclip',
+  })
 end)
