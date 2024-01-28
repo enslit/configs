@@ -92,4 +92,9 @@ packer.startup(function(use)
   use({
     'svermeulen/vim-easyclip',
   })
+  use({
+    'neoclide/coc.nvim',
+    branch = 'master',
+    run = 'yarn install --frozen-lockfile',
+  })
 end)
